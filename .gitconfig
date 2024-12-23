@@ -1,0 +1,18 @@
+[user]
+	name = Vishvam10
+	email = s.vishvam1025@gmail.com
+[core]
+	excludesfile = /Users/vishvam.sundararajan/.gitignore_global
+[gpg]
+	program = gpg1
+[push]
+	autoSetupRemote = true
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[http]
+	postBuffer = 524288000
+[commit]
+	verbose = true

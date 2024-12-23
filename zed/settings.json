@@ -1,0 +1,59 @@
+{
+    "features": {
+        "inline_completion_provider": "none"
+    },
+    "outline_panel": {
+        "dock": "right"
+    },
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false
+    },
+    "languages": {
+        "Python": {
+            "language_servers": ["!pyright", "ruff"],
+            "format_on_save": "on",
+            "formatter": [
+                {
+                    "code_actions": {
+                        "source.fixAll.ruff": true,
+                        "source.organizeImports.ruff": true
+                    }
+                }
+            ]
+        }
+    },
+    // Change to biome for personal projects
+    "language_servers": ["prettier", "eslint", "!biome"],
+    "tab_bar": {
+        "show": true
+    },
+    "tab_size": 4,
+    "toolbar": {
+        "breadcrumbs": true,
+        "quick_actions": false
+    },
+    "preferred_line_length": 80,
+    "soft_wrap": "preferred_line_length",
+    "use_autoclose": true,
+
+    // Learn Vim at some point
+    "vim_mode": false,
+    "ui_font_size": 12,
+    "buffer_font_size": 12,
+    "terminal": {
+        "alternate_scroll": "off",
+        "line_height": "standard",
+        "toolbar": {
+            "title": true
+        },
+        "dock": "right",
+        "working_directory": "current_project_directory",
+        "button": false
+    },
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "One Dark Pro Monokai Darker"
+    }
+}

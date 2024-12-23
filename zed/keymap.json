@@ -1,0 +1,9 @@
+// The default ones are dead similar to VS Code to vary minimal changes here
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-y": "editor::Redo"
+        }
+    }
+]

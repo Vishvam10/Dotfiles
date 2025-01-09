@@ -89,6 +89,8 @@ fi
 # =========================================================
 
 alias c="clear"
+alias ls="eza -alh --git-ignore --git-repos-no-status --group-directories-first --no-permissions --no-user"
+
 alias de="cd ~/Desktop"
 alias dev="cd ~/Desktop/Projects"
 

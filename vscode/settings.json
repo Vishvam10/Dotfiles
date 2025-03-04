@@ -125,5 +125,8 @@
             "bold": false,
             "italic": false
         }
-    ]
+    ],
+    "dart.flutterSdkPath": "/home/vishvam/Desktop/Dev/Flutter-SDK/flutter",
+    "terminal.integrated.altClickMovesCursor": false,
+    "terminal.integrated.copyOnSelection": true
 }

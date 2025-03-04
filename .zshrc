@@ -89,10 +89,21 @@ fi
 # =========================================================
 
 alias c="clear"
-alias ls="eza -alh --git-ignore --git-repos-no-status --group-directories-first --no-permissions --no-user"
+
+# DO NOT USE --total-size. It takes a shit ton of time. Do
+# strace -c with that flag to see the difference
+alias ls="eza  -Thl --git-ignore --git-repos-no-status --level=1 -s name --group-directories-first --no-permissions --no-user --hyperlink"
+
+alias nfiles="find -type f | wc -l"
+
+alias ol="ollama run llama3"
+alias olr="sudo systemctl restart ollama"
+
+alias gpu="watch -n 1 nvidia-smi"
 
 alias de="cd ~/Desktop"
-alias dev="cd ~/Desktop/Projects"
+alias dev="cd ~/Desktop/Dev"
+alias do="cd ~/Downloads"
 
 alias nj="npx jest --"
 alias vt="npx vitest"
@@ -114,9 +125,6 @@ alias spp='export PYTHONPATH=$(pwd)'
 
 alias sshconf="zed ~/.ssh/config"
 alias zconf="zed ~/.zshrc"
-
-alias ol="ollama run llama3"
-
 
 delete-local-branches() {
   # Fetch latest updates from remote
@@ -185,7 +193,7 @@ if [ -f "$HOME/miniforge3/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export PATH="$PATH:$HOME/Desktop/Dev/Flutter-SDK/flutter/bin"
 
 # This is for perf analysis. Uncomment if something is slow and
 # check what is casuing the problem.
